@@ -41,7 +41,7 @@ def find_modules(key=None):
     return modules if key is None else modules[key]
 
 
-class Module(sc.quickobj):
+class Module(ss.CallDebug):
 
     def __init__(self, name=None, label=None, requires=None):
         self.set_metadata(name, label, requires) # Usually reset as part of self.update_pars()
